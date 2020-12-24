@@ -7,8 +7,8 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import { RoadmapSidebar } from "./RoadmapSidebar";
 import { RoadmapState } from "./RoadmapState";
-// import { Tutorial } from "./Tutorial";
-// import { CustomDragLayer } from "./CustomDragLayer";
+import { Tutorial } from "./Tutorial";
+import { CustomDragLayer } from "./CustomDragLayer";
 
 export default function App() {
   return (
@@ -19,9 +19,9 @@ export default function App() {
         <RoadmapState>
           <RoadmapSidebar />
           <RoadmapContent />
-          {/* <Tutorial /> */}
+          <Tutorial />
         </RoadmapState>
-        {/* <CustomDragLayer /> */}
+        <CustomDragLayer />
       </DndProvider>
     </div>
   );

@@ -10,7 +10,7 @@ export const ViewportContext = React.createContext(null);
  * vice-versa.
  */
 export function Viewport({ children }) {
-  const [viewportRef, width] = [];
+  const [viewportRef, width] = useResizeObserver();
   const [range, setRange] = React.useState(defaultRange());
 
   const pixelInMillis = React.useMemo(
